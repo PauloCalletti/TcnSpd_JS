@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Com Bootstrap</h1>
+        <form name="formulario" action="post" action="control.php">
+            <label for="nome"> Digite o Nome: </label>
+            <input type="text" name="nome" placeholder="Nome Completo" autocomplemento="off" autofocus="" required>
+            <br>
+            <label for="email">Digite um Email</label>
+            <input type="text" name="email" placeholder="E-Mail" autocomplemento="off" autofocus="" required>
+            <br>
+            <label for="estadoCivil">Selecione um Estado Civíl</label>
+            <select name="estadocivil" required>
+                <option value=""></option>
+                <option value="C">Casado</option>
+                <option value="S">Solteiro</option>
+                <option value="E">Enrolado</option>    
+            </select>
+            <br>
+            <label for="genero">Gênero</label>
+            <input type="radio" name="genero" value="M">Masculino
+            <input type="radio" name="genero" value="F">Feminino
+            <input type="radio" name="genero" value="O">Outro
+            <br>
+            <label for="disciplina">Selecione um Disciplina</label>
+            <input type="checkbox" name="matemarica">Matemática
+            <input type="checkbox" name="portugues">Português
+            <br>
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" cols="30" rows="4"placeholder="descreva o caso" maxlength="20"></textarea>
+            <br>
+            <button class="btn btn-success" type="submit" name="ENVIAR">Enviar</button>
+            <button class="btn btn-warning" type="reset" name="REDEFINIR">Redefinir</button>
+        </form>
+        <h1>Notícias</h1>
+        <div class="row">
+            <div class="col-3">
+                <img src="../aula_3/imagens/banner.jpg" class="w-100">
+            </div>
+            <div class="col-3">
+                <img src="../aula_3/imagens/banner.jpg" class="w-100">
+            </div>
+            <div class="col-3">
+                <img src="../aula_3/imagens/banner.jpg" class="w-100">
+            </div>
+            <div class="col-3">
+                <img src="../aula_3/imagens/banner.jpg" class="w-100">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

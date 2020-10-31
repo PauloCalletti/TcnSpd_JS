@@ -1,0 +1,27 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    width: 100%;
+    background: blueviolet;
+}
+nav {
+    width: 20%;
+    background: chartreuse;
+    float: left;
+}
+main{
+    width: 80%;
+    background: orange;
+    float: right;
+}
+footer {
+    background: pink;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.clearfix {
+    clear: both; /*clear - ignora os floats que vieram antes dele*/
+}

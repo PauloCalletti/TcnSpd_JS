@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Gugol</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css "href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/png" href="imagens/icone.png">
+</head>
+<body>
+<!-- comentários - header -->
+<header>
+	<a href="index.html" title="Página Inicial">
+		<img src="imagens/logo.png" title="Logo Gugol" alt="Logo Gugol">
+	</a>
+	<a href="#" id="menu">
+		<i class="fas fa-bars"></i>
+	</a>
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html" title="página inicial">
+					Home
+				</a>
+			</li>
+			<li>
+				<a href="sobre.html" title="Sobre">
+					Sobre
+				</a>
+			</li>
+			<li>
+				<a href="contato.html" title="Contato">
+					Contato
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com" title="intagram">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com" title="intagram">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<figure>
+	<img src="imagens/banner.jpg" alt="Banner" title="Banner">
+	<div class="frase">
+		Olá melhores Aspiras da Tecnospeed!!!
+	</div>
+</figure>
+<div class="container">
+	<main class="no-grid">
+        <h1>Entre em Contato</h1>
+            <form name="formulario" action="post" action="control.php">
+                <label for="nome"> Digite o Nome: </label>
+                <input type="text" name="nome" placeholder="Nome Completo" autocomplemento="off" autofocus="" required>
+                <br>
+                <label for="email">Digite um Email</label>
+                <input type="text" name="email" placeholder="E-Mail" autocomplemento="off" autofocus="" required>
+                <br>
+                <label for="estadoCivil">Selecione um Estado Civíl</label>
+                <select name="estadocivil" required>
+                    <option value=""></option>
+                    <option value="C">Casado</option>
+                    <option value="S">Solteiro</option>
+                    <option value="E">Enrolado</option>    
+                </select>
+                <br>
+                <label for="genero">Gênero</label>
+                <input type="radio" name="genero" value="M">Masculino
+                <input type="radio" name="genero" value="F">Feminino
+                <input type="radio" name="genero" value="O">Outro
+                <br>
+                <label for="disciplina">Selecione um Disciplina</label>
+                <input type="checkbox" name="matemarica">Matemática
+                <input type="checkbox" name="portugues">Português
+                <br>
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" cols="30" rows="4"placeholder="descreva o caso" maxlength="20"></textarea>
+                <br>
+                <button type="submit" name="ENVIAR">Enviar</button>
+                <button type="reset" name="REDEFINIR">Redefinir</button>
+            </form>
+    </main>
+        <aside>
+            <h2>Últimas Notícias</h2>
+            <ul>
+                <li>
+                    <a href="noticia1.html" title="Noticia 1">
+                        Notícia 1
+                    </a>
+                </li>
+                <li>
+                    <a href="noticia1.html" title="Noticia 1">
+                        Notícia 2
+                    </a>
+                </li>
+            </ul>
+            <h2>Melhores Times</h2>
+            <ol>
+                <li>Goiás</li>
+                <li>Vasco</li>
+                <li>Botafogo</li>
+                <li>Coritiba</li>
+            </ol>
+        </aside>
+</div>
+<div class="clearfix"></div>
+<footer>
+	<div class="container">
+		<p>Desenvolvido por Aspiras</p>
+	</div>
+</footer>
+<script> type="text/javascript"
+	//função para acionar o menu em celulares
+	document.querySelector('menu').onclick = function() {
+		//mostrar ou esconder o menu
+		document.querySelector('header nav').classList.toggle('show');
+	}
+</script>
+</body>
+</html>
